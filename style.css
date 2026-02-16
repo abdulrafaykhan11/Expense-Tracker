@@ -1,0 +1,111 @@
+body{
+    background-color: #f0f8ff;
+}
+.head{
+    color: #237cd4;
+    font-weight: bold;
+    font-size: 3rem;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+}
+.calculations{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.calculations div{
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 25%;
+}
+.calculations h4{
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.calculations h1{
+    color: #237cd4;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.income h1{
+    color: #28a745;
+}
+.expense h1{
+    color: #dc3545;
+}
+i{
+    margin-right: 8px;
+    color: #b11919;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+.transaction{
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #fff 0%, #f8fbff 100%);
+    box-shadow: 0 4px 15px rgba(35, 124, 212, 0.1);
+    border-radius: 12px;
+    padding: 15px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-left: 5px solid #a1e024;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+.transaction:hover{
+    box-shadow: 0 8px 20px rgba(35, 124, 212, 0.2);
+}
+.transaction::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(180deg, #237cd4, #1a5aa8);
+}
+.transaction.income{
+    border-left-color: #28a745;
+}
+.transaction.income::before{
+    background: linear-gradient(180deg, #28a745, #1f7a34);
+}
+.transaction.expense{
+    border-left-color: #dc3545;
+}
+.transaction.expense::before{
+    background: linear-gradient(180deg, #dc3545, #a82835);
+}
+li{
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.transaction li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.transaction li.income{
+    border-right: 5px solid #28a745;
+}
+.list-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+.amount{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
