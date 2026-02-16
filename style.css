@@ -109,3 +109,77 @@ li{
     font-weight: bold;
     font-size: 1.2rem;
 }
+.col-md-8{
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+.col-md-8 h5{
+    color: #237cd4;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #237cd4;
+    padding-bottom: 10px;
+}
+.col-md-8 .list-group-item{
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    width: 100%;
+    margin: 0;
+}
+.col-md-8 .list-group-item:hover{
+    background-color: transparent;
+    transition: 0.3s;
+}
+.col-md-8 .list-group-item:hover .transaction{
+    box-shadow: 0 8px 20px rgba(35, 124, 212, 0.2);
+}
+.col-md-8 .list-group-item strong{
+    color: #237cd4;
+    font-size: 1.1rem;
+}
+.col-md-8 .list-group-item small{
+    color: #999;
+    font-size: 0.9rem;
+}
+.col-md-8 .amount{
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: rgba(35, 124, 212, 0.1);
+    min-width: 80px;
+    text-align: center;
+}
+.col-md-8 .amount.income{
+    color: #28a745;
+    background: rgba(40, 167, 69, 0.1);
+}
+.col-md-8 .amount.expense{
+    color: #dc3545;
+    background: rgba(220, 53, 69, 0.15);
+}
+.delete-btn{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transform: scale(0.8);
+    margin-left: 10px;
+    min-width: 45px;
+    background-color: #f0f0f0 !important;
+    color: #237cd4;
+    border: 2px solid #05755f;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.delete-btn:hover{
+    background-color: #237cd4 !important;
+    color: #fff;
+    transform: scale(1.1);
+}
+.col-md-8 .list-group-item:hover .delete-btn{
+    opacity: 1;
+    transform: scale(1);
+}
