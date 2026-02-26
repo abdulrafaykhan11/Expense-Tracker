@@ -170,12 +170,11 @@ li{
     min-width: 45px;
     background-color: #f0f0f0 !important;
     color: #237cd4;
-    border: 2px solid #05755f;
+    border: 2px solid #237cd4;
     padding: 5px 10px;
     border-radius: 5px;
 }
 .delete-btn:hover{
-    background-color: #237cd4 !important;
     color: #fff;
     transform: scale(1.1);
 }
